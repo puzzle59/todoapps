@@ -20,6 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     #AUTH
-path('signup/',views.signupuser,name='signupuser')
+path('signup/',views.signupuser,name='signupuser'),
+
     #To dos
+path('current/',views.currenttodos,name='currenttodos'),
 ]
