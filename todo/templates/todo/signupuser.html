@@ -1,4 +1,9 @@
  Let's go
+ {% extends 'todo/base.html' %}
+
+
+ {% block content %}
+
  <h1> Sign up</h1>
  <h2> {{ error }}</h2>
  <form method="POST">
@@ -6,3 +11,6 @@
    <button type="submit" >Clique ici et nul part ailleurs </button>
    {% csrf_token %}
  </form>
+
+
+ {% endblock %}

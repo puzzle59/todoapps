@@ -21,7 +21,10 @@ urlpatterns = [
 
     #AUTH
 path('signup/',views.signupuser,name='signupuser'),
+path('logout/',views.logoutuser,name='logoutuser'),
+
 
     #To dos
 path('current/',views.currenttodos,name='currenttodos'),
+path('',views.home,name='home'),
 ]
