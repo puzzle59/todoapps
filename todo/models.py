@@ -8,4 +8,4 @@ class Todo(models.Model):
     created = models.DateTimeField(auto_now_add= True)
     datecompleted = models.DateTimeField(null=True)
     important= models.BooleanField(default=False)
-    user = models.BooleanField(default=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
