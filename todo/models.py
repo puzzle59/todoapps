@@ -8,3 +8,8 @@ class Todo(models.Model):
     datecompleted = models.DateTimeField(null=True, blank=True)
     important= models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+#petite fonction ci desssous sert à afficher le titre de la todo
+#dans l'interface admin pour s'y retrouver
+    def __str__(self):
+        return self.title
